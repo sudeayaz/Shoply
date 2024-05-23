@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main Page - Shoply</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="plugins/jquery-toast-plugin-master/src/jquery.toast.css">
+    <link rel="stylesheet" href="css/shop.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+
+<body class="shop">
+    <nav>
+        <div class="header">
+            <div class="header-wrapper">
+                <div class="user-content">
+                    <h3>Shoply<i class="fa fa-shopping-bag" aria-hidden="true"></i></h3>
+                </div>
+                <div class="links">
+                  <span class="user-name"></span>
+                  <span class="shopping-cart"> <button data-target="modal1" class="btn modal-trigger basket-btn"><i class="fa fa-shopping-cart" aria-hidden="true"></i></button></span>
+                  <button id="logoutBtn" class="btn waves-effect black">Log Out</button>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="main-content">
+           <h1>Welcome to Shoply! - Find everyday usable needs with ease.</h1> 
+        </div>
+
+        <div class="product-area">
+            <div class="actions">
+                <div class="row">
+                    <div class="input-field col s12">
+                        <i class="material-icons prefix">search</i>
+                        <input type="text" id="productSearch" placeholder="Search products...">
+                    </div>
+                </div>
+            </div>
+            <div class="product-container">
+                <div class="row products">
+                 
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modal1" class="modal">
+        <div class="modal-content">
+          <h4>Your Basket</h4>
+          <p>Control your basket, delete or update a item.</p>
+
+          <div class="basket-items">
+
+          </div>
+        </div>
+        <div class="modal-footer">
+            <p class="totalPrice-js"></p>
+            <a href="#!" class="waves-effect waves-green black btn-flat payment-btn">Complete Payment</a>
+          <a href="#!" class="modal-close waves-effect waves-green btn-flat">Close</a>
+        </div>
+      </div>
+              
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    <script src="js/index.js"></script>
+    <script src="plugins/jquery-toast-plugin-master/src/jquery.toast.js"></script>
+</body>
+</html>

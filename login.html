@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Login - Shoply</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="js/auth.js" defer></script>
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="icon" type="image/x-icon" href="img/favicon.ico">
+    <link rel="stylesheet" href="css/auth.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+
+</head>
+
+<body class="auth login">
+    <nav>
+        <div class="header">
+            <div class="header-wrapper">
+                <div class="user-content">
+                    <h3>Shoply<i class="fa fa-shopping-bag" aria-hidden="true"></i></h3>
+                </div>
+                <div class="links">
+                    <a href="login.html" class="header-link">Login</a>
+                    <a href="register.html" class="header-link">Register</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+
+        <form id="loginForm" class="col s12">
+            <div class="title-wrapper">
+                <h1>Welcome Back !</h1>
+            </div>
+            <div class="row">
+                <div class="input-field col s12">
+                    <p class="text" ><strong>Email</strong></p>
+                    <input type="email" id="email" class="validate" required>
+                    <div id="emailError">Please enter a valid email.</div>
+
+                </div>
+                <div class="input-field col s12">
+                    <p class="text" ><strong>Password</strong></p>
+                    <input type="password" id="password" class="validate" required>
+                    <div id="passwordError">Password is wrong</div>
+
+                </div>
+                <button type="submit" class="btn waves-effect black">Login</button>
+            </div>
+        </form>
+    </div>
+</body>
+
+</html>

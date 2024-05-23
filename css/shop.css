@@ -1,0 +1,67 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body.shop .container {
+  flex-direction: column;
+  justify-content: flex-start;
+}
+body.shop .container .product-area {
+  width: 100%;
+}
+body.shop .container .row.products {
+  display: flex;
+  flex-wrap: wrap;
+}
+body.shop .basket-btn {
+  background-color: black;
+  transition: all 0.3s ease-in-out;
+}
+body.shop .basket-btn:hover {
+  background-color: rgb(54, 54, 54);
+}
+body.shop .card {
+  font-weight: 700 !important;
+}
+body.shop .card .card-title {
+  color: black;
+  font-weight: 700;
+  background-color: rgba(245, 245, 220, 0.768627451);
+  border-radius: 50%;
+}
+body.shop .card .card-image {
+  width: 100%;
+  height: 100%;
+  max-height: 300px;
+  max-width: 300px;
+}
+body.shop .card .card-image img {
+  height: 320px;
+}
+body.shop .modal {
+  width: 70%;
+  border-radius: 8px;
+  background-color: rgb(254, 211, 211);
+}
+body.shop .modal .basket-items .card {
+  align-items: center;
+  max-width: 70%;
+}
+body.shop .modal .basket-items .card-image {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+body.shop .modal .basket-items .card img {
+  width: 50%;
+}
+body.shop .modal .modal-footer {
+  font-weight: 700 !important;
+  background-color: rgb(254, 211, 211);
+}
+body.shop .modal .payment-btn {
+  color: white;
+}
+

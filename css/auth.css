@@ -1,0 +1,14 @@
+.auth .title-wrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.auth button:hover {
+  background-color: rgb(160, 160, 160);
+}
+.auth .input-field input:focus + label {
+  display: none;
+  color: white !important;
+}
+
